@@ -23,6 +23,7 @@ Jetzt kann ich sehen, dass die Spalte "ISSN" an 5. Stelle und "Date" an 12. Stel
 
 Dann lasse ich mir mit *cat* den Inhalt der neuen Datei anzeigen:
 (base) mia@mia-550P5C-550P7C:~/dirty **$ cat anders2.tsv**
+
 ISSN	Date
 ISSN: 0004-9522	1995
 0013-8266	1995
