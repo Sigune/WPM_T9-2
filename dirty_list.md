@@ -5,21 +5,24 @@ Aufgabenstellung: Die Datei "2020-05-23-Article_list_dirty.tsv" ist nicht sauber
 
 ## 1. Schritt: Download der "dirty" Datei
 Die Datei "2020-05-23-Article_list_dirty.tsv" lade ich in den Ordner "dirty" hinunter und lege sie gleichzeitig in eine neue Datei "anders1.tsv" ab (so bleibt die Ursprungsdatei bei meinen weiteren Schritten unverändert):
-(base) mia@mia-550P5C-550P7C:~/dirty**$ cat 2020-05-23-Article_list_dirty.tsv > anders1.tsv**
+
+(base) mia@mia-550P5C-550P7C:~/dirty **$ cat 2020-05-23-Article_list_dirty.tsv > anders1.tsv**
 
 ## 2. Schritt: Die gewünschten zwei Spalten ausschneiden
 Ich lasse mir den Inhalt der neuen Datei "anders1.tsv" anzeigen, um die Namen und die Position der einzelnen Spalten sehen zu können:
-(base) mia@mia-550P5C-550P7C:~/dirty**$ cat anders1.tsv**
+(base) mia@mia-550P5C-550P7C:~/dirty **$ cat anders1.tsv**
+
 Creator	Issue	Volume	Journal	ISSN	ID	Citation	Title	Place Labe	Language	Publisher	Date		
 Andrews, E. M.	2	41	AUSTRALIAN JOURNAL OF POLITICS AND HISTORY	ISSN: 0004-9522	(Uk)RN000249208	AUSTRALIAN JOURNAL OF POLITICS AND HISTORY 41(2), 239-252. (1995)	"""For Australia's Wartime Interests"": W. M. Hughes and the Push Against Asquith, Britain, March-July 1916"	at	eng	THE UNIVERSITY OF QUEENSLAND PRESS	1995		
 Otte, T. G.	439	110	ENGLISH HISTORICAL REVIEW	0013-8266	(Uk)RN000490775	ENGLISH HISTORICAL REVIEW 110(439), 1157-1179. (1995)	Great Britain, Germany, and the Far-Eastern Crisis of 1897-8	xxk	eng	LONGMAN GROUP LIMITED	1995		
 Nesbitt, E.	2	15	SOUTH ASIA RESEARCH	0262-7280	(Uk)RN000733465	SOUTH ASIA RESEARCH 15(2), 221-240. (1995)	Panjabis in Britain: Cultural History and Cultural Choices	xxk	eng	OXFORD UNIVERSITY PRESS	1995 \[...]
 
 Jetzt kann ich sehen, dass die Spalte "ISSN" an 5. Stelle und "Date" an 12. Stelle steht. Mit dem Befehl *cut* schneide ich die beiden Spalten aus und lege das Ergebnis in der neuen Datei "anders2.tsv" ab:
-(base) mia@mia-550P5C-550P7C:~/dirty**$ cat anders1.tsv | cut -f 5,12 > anders2.tsv**
+
+(base) mia@mia-550P5C-550P7C:~/dirty **$ cat anders1.tsv | cut -f 5,12 > anders2.tsv**
 
 Dann lasse ich mir mit *cat* den Inhalt der neuen Datei anzeigen:
-(base) mia@mia-550P5C-550P7C:~/dirty**$ cat anders2.tsv**
+(base) mia@mia-550P5C-550P7C:~/dirty **$ cat anders2.tsv**
 ISSN	Date
 ISSN: 0004-9522	1995
 0013-8266	1995
