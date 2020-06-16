@@ -68,38 +68,6 @@ ISSN:0008-4107	1995
 0707-5332	1996
 issn: 0707-5332	1996 \[...]
 
-neu: Test
-ISSN    Date
-ISSN: 0004-9522    1995
-0013-8266    1995
-0262-7280    1995
-0022-4529    1995
-0022-4529    1995
-
-0022-1953    1996
-1056-8190    1995
-0030-8684    1995
-0129-797X    1995
-0018-2648    1996
-ISSN:0265-6914    1996
-0265-6914    1996
-ISSN:0008-4107    1995
-
-0950-9224    1995
-0707-5332    1995
-0019-7211    1996
-0022-2801    1995
-0022-2801    1995
-0018-2613    1996
-0968-7475    1995
-0003-813X    1996
-0013-2683    1995
-6    eng
-6    eng
-27    eng
-39    eng
-
-
 ### Zwischenfazit:
 Die Datei "anders2.tsv" enthält nur noch die gewünschten zwei Spalten "ISSN" und "Date". Zugleich ist nun deutlicher sichtbar, was bereinigt werden soll:
 - Leerzeilen entfernen
