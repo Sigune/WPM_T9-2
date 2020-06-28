@@ -29,7 +29,6 @@ Jetzt kann ich erkennen, dass die Spalte "ISSN" an 5. Stelle und "Date" an 12. S
 
 Anschließend lasse ich mir mit *cat* den Inhalt der neuen Datei anzeigen:
 **$ cat anders2.tsv**
-
 ISSN    Date
 ISSN: 0004-9522    1995
 0013-8266    1995
